@@ -102,6 +102,18 @@
       "password": "$2a$10$JABwR1UAtJqr2DCJ41ypMOgOqlh8eRXmTBO6DXfKG3ybxhABY4rey",
       "role": "admin",
       "id": 2
+    },
+    {
+      "email": "caro.hopper@systers.xyz",
+      "password": "$2a$10$nCXqMOa/Kek1mNSxu3a0WOGHK/ZNTkt/s86tTZaED3G5nCLh/HmKC",
+      "role": "waiter",
+      "id": 3
+    },
+    {
+      "email": "pao.hopper@systers.xyz",
+      "password": "$2a$10$gZLOhiTlCzES1ptokJ311uOo9IQFQSHnNFNbXYGlv69NWApv3pfNq",
+      "role": "waiter",
+      "id": 4
     }
   ]
 }
