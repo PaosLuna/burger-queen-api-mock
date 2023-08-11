@@ -25,7 +25,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTYwMTIwNiwiZXhwIjoxNjkxNjA0ODA2LCJzdWIiOiIyIn0.cHEqWdwQ-ljbTNc-64kjvm0gLr4tDahTtGQlOtVzGx4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc5MDU2NSwiZXhwIjoxNjkxNzk0MTY1LCJzdWIiOiIyIn0.PIEgd56aJcqbPqJ7nx5Qbl1qyFejFYdqKOEii5jCyd4
 
 PATCH http://localhost:8080/orders/2 HTTP/1.1
 content-type: application/json
@@ -36,9 +36,9 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
     "dateProcessed": "2022-03-05 16:00"
 }
 
-DELETE http://localhost:8080/orders/3 HTTP/1.1
+DELETE http://localhost:8080/orders/24 HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc2NTQwOCwiZXhwIjoxNjkxNzY5MDA4LCJzdWIiOiIyIn0.1usm254RTAf2z3VpN6SF54kdyIl5_8dW3DcFnQ4qWZE
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc5MDU2NSwiZXhwIjoxNjkxNzk0MTY1LCJzdWIiOiIyIn0.PIEgd56aJcqbPqJ7nx5Qbl1qyFejFYdqKOEii5jCyd4
 
 POST http://localhost:8080/orders HTTP/1.1
 content-type: application/json
