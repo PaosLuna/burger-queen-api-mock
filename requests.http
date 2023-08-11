@@ -6,9 +6,18 @@ content-type: application/json
     "password": "123456"
 }
 
+POST http://localhost:8080/users HTTP/1.1
+content-type: application/json
+
+{
+    "email": "chef.hopper@systers.xyz",
+    "password": "123456",
+    "role":"chef"
+}
+
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MDkxMTQwMSwiZXhwIjoxNjkwOTE1MDAxLCJzdWIiOiIyIn0.voJdm9lp6y0XnKJ_UQ-z4oGrXQz55ryoa1EOq8lqWN4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc4ODM4NSwiZXhwIjoxNjkxNzkxOTg1LCJzdWIiOiIyIn0.LJegfZym79g0K1gNqD7iQuIYQKfrovaB95k3By8V6Pk
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
@@ -16,7 +25,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY1MDIzMzkwOSwiZXhwIjoxNjUwMjM3NTA5LCJzdWIiOiIyIn0.nS99u-MBatZHbexMUenwsGdS8oV55BIaGwI6PSP7BC8
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTYwMTIwNiwiZXhwIjoxNjkxNjA0ODA2LCJzdWIiOiIyIn0.cHEqWdwQ-ljbTNc-64kjvm0gLr4tDahTtGQlOtVzGx4
 
 PATCH http://localhost:8080/orders/2 HTTP/1.1
 content-type: application/json
@@ -27,12 +36,16 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
     "dateProcessed": "2022-03-05 16:00"
 }
 
+DELETE http://localhost:8080/orders/3 HTTP/1.1
+content-type: application/json
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc2NTQwOCwiZXhwIjoxNjkxNzY5MDA4LCJzdWIiOiIyIn0.1usm254RTAf2z3VpN6SF54kdyIl5_8dW3DcFnQ4qWZE
+
 POST http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY2NjEyNTQ5NSwiZXhwIjoxNjY2MTI5MDk1LCJzdWIiOiIyIn0.laNI7HKXIcDzCp1AYl4aMWh5jSlcMFKFQLHrCC2XTPw
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTUzMzE5OCwiZXhwIjoxNjkxNTM2Nzk4LCJzdWIiOiIyIn0.MHULlldb_zKaPGSSQjohSQnfc8vElP7BqV0Sz03R3DU
 
 {
-    "client": "Harry Potter",
+    "client": "pao",
     "products": [
         {
             "qty": 1,
