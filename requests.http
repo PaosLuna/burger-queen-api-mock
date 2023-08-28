@@ -2,7 +2,7 @@ POST http://localhost:8080/login HTTP/1.1
 content-type: application/json
 
 {
-    "email": "grace.hopper@systers.xyz",
+    "email": "cocinero@queen.com",
     "password": "123456"
 }
 
@@ -10,22 +10,22 @@ POST http://localhost:8080/users HTTP/1.1
 content-type: application/json
 
 {
-    "email": "chef.hopper@systers.xyz",
+    "email": "cocinero@queen.com",
     "password": "123456",
     "role":"chef"
 }
 
 GET http://localhost:8080/users HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc4ODM4NSwiZXhwIjoxNjkxNzkxOTg1LCJzdWIiOiIyIn0.LJegfZym79g0K1gNqD7iQuIYQKfrovaB95k3By8V6Pk
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvY2luZXJvQHF1ZWVuLmNvbSIsImlhdCI6MTY5MjQ4NzExNSwiZXhwIjoxNjkyNDkwNzE1LCJzdWIiOiI3In0.bT5WwdBrxj7GjyvZRA9zNB3RPIgiHr_KCFlhCa8yOpE
 
 GET http://localhost:8080/products HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MDkxMTQwMSwiZXhwIjoxNjkwOTE1MDAxLCJzdWIiOiIyIn0.voJdm9lp6y0XnKJ_UQ-z4oGrXQz55ryoa1EOq8lqWN4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImNvY2luZXJvQHF1ZWVuLmNvbSIsImlhdCI6MTY5MjIxODU3OSwiZXhwIjoxNjkyMjIyMTc5LCJzdWIiOiI3In0.06VBqOyxuW5_2yaBK7dWz82rHVoojCzTxDY9v1x-JTw
 
 GET http://localhost:8080/orders HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc5MDU2NSwiZXhwIjoxNjkxNzk0MTY1LCJzdWIiOiIyIn0.PIEgd56aJcqbPqJ7nx5Qbl1qyFejFYdqKOEii5jCyd4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MjAyOTQ0MSwiZXhwIjoxNjkyMDMzMDQxLCJzdWIiOiIyIn0.-995mt1vRvzWH7l7SNeTZY_oEiUkuG03DWWtS7Z4cds
 
 PATCH http://localhost:8080/orders/2 HTTP/1.1
 content-type: application/json
@@ -38,7 +38,7 @@ authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlL
 
 DELETE http://localhost:8080/orders/24 HTTP/1.1
 content-type: application/json
-authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MTc5MDU2NSwiZXhwIjoxNjkxNzk0MTY1LCJzdWIiOiIyIn0.PIEgd56aJcqbPqJ7nx5Qbl1qyFejFYdqKOEii5jCyd4
+authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImdyYWNlLmhvcHBlckBzeXN0ZXJzLnh5eiIsImlhdCI6MTY5MjAyOTQ0MSwiZXhwIjoxNjkyMDMzMDQxLCJzdWIiOiIyIn0.-995mt1vRvzWH7l7SNeTZY_oEiUkuG03DWWtS7Z4cds
 
 POST http://localhost:8080/orders HTTP/1.1
 content-type: application/json
